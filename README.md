@@ -1,10 +1,11 @@
-A simple server-side rendered React App.
+A simple server-side rendered React App with 360 view.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `yarn install`
+
 To install the dependencies
 
 ### `yarn start`
