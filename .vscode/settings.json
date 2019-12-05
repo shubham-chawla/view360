@@ -1,0 +1,44 @@
+{
+    // Place your settings in this file to overwrite default and user settings.
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.renderIndentGuides": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": true,
+    "editor.useTabStops": true,
+    "prettier.tabWidth": 4,
+    "prettier.semi": false,
+    "prettier.printWidth": 80,
+    "prettier.useTabs": true,
+    "prettier.trailingComma": "es5",
+    "prettier.jsxBracketSameLine": false,
+    "flow.useNPMPackagedFlow": true,
+    "javascript.validate.enable": false,
+    "javascript.format.enable": false,
+    "search.exclude": {
+        "**/coverage": true,
+        "**/coverages": true,
+        "**/bower_components": true,
+        "**/.history": true,
+        "**/build-src": true,
+        "**/.happypack": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/node_modules": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/bower_components": true,
+        "**/jspm_packages": true,
+        "**/.history": true,
+        "**/.happypack": true
+    },
+    "files.watcherExclude": {
+        "**/.git/**": true,
+        "**/node_modules/**": true
+    }
+}

@@ -1,0 +1,53 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceRoot}/packages/events-client/src"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Server Debugger",
+            "program": "${workspaceRoot}/packages/events-server/build/server_dev",
+            "protocol": "inspector",
+            "cwd": "${workspaceRoot}/packages/events-server",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "name": "Debug Jest Tests",
+            "type": "node",
+            "request": "launch",
+            "port": 9230,
+            "runtimeArgs": [
+                "--inspect-brk=9230",
+                "${workspaceRoot}/node_modules/.bin/jest",
+                "--runInBand",
+                "--watch",
+                "--env=jsdom"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Develop Server Debugger",
+            "program": "${workspaceRoot}/packages/events-server/src/dev/index.js",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+            "protocol": "inspector",
+            "cwd": "${workspaceRoot}/packages/events-server",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "outFiles": [],
+            "preLaunchTask": null,
+        },
+    ]
+}

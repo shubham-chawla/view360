@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.scss';
 
-import ProcessManager from './components/ProcessManager';
+import View360 from './components/View360';
 
 const App = () => (
     <div>
-        <ProcessManager />
+        <View360 />
     </div>
 );
 
