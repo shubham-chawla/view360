@@ -8,6 +8,10 @@ const path = require('path');
 const app = express();
 
 app.get('/', serverRenderer);
+app.get('/img/camp-nou', (req, res, next) => {
+    const filePath = path.resolve('server/middleware/campnou.jpg');
+    return res.sendFile(filePath);
+});
 app.use(express.static(path.resolve('dist')));
 
 app.listen(PORT, error => {
