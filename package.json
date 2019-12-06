@@ -1,5 +1,5 @@
 {
-    "name": "friendster",
+    "name": "view360",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -17,10 +17,10 @@
         "webpack-node-externals": "^1.7.2"
     },
     "scripts": {
-        "start": "webpack-dev-server --open",
+        "start": "yarn deploy",
         "build": "webpack",
         "build:server": "webpack --config ./config/server.js",
-        "deploy": "yarn build && yarn build:server && node dist/server.js"
+        "deploy": "yarn build && yarn build:server"
     },
     "eslintConfig": {
         "extends": "react-app"
