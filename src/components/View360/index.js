@@ -1,7 +1,7 @@
 import React from 'react';
 import * as THREE from 'three';
 
-const imgUrl = 'https://raw.githubusercontent.com/spite/THREE.CubemapToEquirectangular/master/about/pano-The%20Polygon%20Shredder-1471041904038.jpg';
+const imgUrl = 'https://threejs.org/examples/textures/2294472375_24a3b8ef46_o.jpg';
 // 'https://threejs.org/examples/textures/2294472375_24a3b8ef46_o.jpg';
 // 'https://raw.githubusercontent.com/spite/THREE.CubemapToEquirectangular/master/about/pano-The%20Polygon%20Shredder-1471041904038.jpg'
 
